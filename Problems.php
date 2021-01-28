@@ -64,12 +64,25 @@ function powerofthree($value)
 		return powerofthree($value/3);
 	}
 }
+function checkarray($arr){
+	$newarray = array();
+	foreach ($arr as $key => $value) {
+		$new = $value + 1;
+		if ($arr[$key+1] != $new) {
+			array_push($newarray, $new);
+		}
+
+	}
+	print_r($newarray);
+
+}
 $two = poweroftwo(32);
 echo "<br>";
 echo $two;
 $three = powerofthree(10);
 echo $three;
-
+$array = array(1,2,3,5,7,9);
+checkarray($array);
 // countnumbers(15,5);
 // patterncalculator(7);
 // calculatestring("88HELLO WORLD3!");
