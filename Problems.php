@@ -51,9 +51,25 @@ function poweroftwo($value)
 		return poweroftwo($value/2);
 	}
 }
+function powerofthree($value)
+{
+
+	if ($value == 0) {
+		return "The value is not a power of three";
+	}
+	elseif ($value == 1) {
+		return "The value is a power of three";
+	}
+	else{
+		return powerofthree($value/3);
+	}
+}
 $two = poweroftwo(32);
 echo "<br>";
 echo $two;
+$three = powerofthree(10);
+echo $three;
+
 // countnumbers(15,5);
 // patterncalculator(7);
 // calculatestring("88HELLO WORLD3!");
