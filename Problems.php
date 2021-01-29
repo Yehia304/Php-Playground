@@ -38,6 +38,17 @@ function calculatestring($str)
 	$sum = array_sum($arr);
 	echo $sum;
 }
+function checksum($arr){
+	$new = array();
+
+	foreach ($arr as $key => $value) {
+		if (($value + $arr[$key+1] + $arr[$key+2]) == 0) {
+			echo "EQUAL TO ZERO";
+		}
+	}
+
+
+}
 
 function poweroftwo($value)
 {
@@ -87,7 +98,9 @@ checkarray($array);
 // patterncalculator(7);
 // calculatestring("88HELLO WORLD3!");
 
+$arr = array(1,0,-1,2,0,-2);
 
+checksum($arr);
 
 
 
