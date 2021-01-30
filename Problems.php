@@ -87,6 +87,26 @@ function checkarray($arr){
 	print_r($newarray);
 
 }
+function occurtwice($arr){
+	$count = 0;
+	foreach ($arr as $key => $value) {
+		for ($i=0; $i <sizeof($arr) ; $i++) { 
+			if ($arr[$i] == $value) {
+				$count = $count + 1;
+			}
+
+		}
+		if ($count == 1) {
+			echo "Single number : " . $value . "<br>";
+		}
+		$count = 0;
+	}
+
+}
+
+
+$x = array(5,4,3,4,3);
+occurtwice($x);
 $two = poweroftwo(32);
 echo "<br>";
 echo $two;
