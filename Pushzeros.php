@@ -10,6 +10,8 @@ foreach ($val as $key => $value) {
 	}
 }
 
+echo 'Zeros are pushed.' . '<br>';
+
 print_r($val);
 
 
