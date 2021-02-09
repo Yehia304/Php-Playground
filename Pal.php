@@ -1,5 +1,5 @@
 <?php 
-
+function Yehia(){
 $string = 'yehiaqaihey';
 
 $Me = str_split($string);
@@ -21,7 +21,7 @@ echo "<br>";
 $string = "some string";
 $vowels = array("a", 'e', 'i', 'o', 'u');
 $after = str_replace($vowels, array_map('strtoupper', $vowels), $string);
-echo $after;
+echo $after;}
 
 //int_r($Me);
 
