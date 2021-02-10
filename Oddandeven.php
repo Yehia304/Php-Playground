@@ -1,4 +1,4 @@
-<?php
+d<?php
 
 
 $numbers  = array(1,1,2,2,3,3,4,4,5,5,5);
@@ -40,6 +40,9 @@ function calculated($numbers){
 
 
 $val = calculated($numbers);
+print_r($val);
+
+echo "<br>";
 
 echo $val;
 
