@@ -1,12 +1,18 @@
 <?php
 
+function display($new){
+
+    echo $new;
+
+}
+
 $yehia = 'yehiaelsayedibrahim';
 
 $vowels = array('a','e','i','o','u');
 
 $new = str_replace($vowels, array_map('strtoupper', $vowels), $yehia);
 
-echo $new;
+display($new);
 
 
 $string = 'some string';
