@@ -6,6 +6,13 @@ $split = str_split($Yehia);
 
 $string = fun($split,$Yehia);
 
+function display($new){
+	
+	echo $new;
+	
+	
+}
+
 function fun($yes , $salue){
 
 for ($i = 0; $i < strlen($salue) ; $i++){
@@ -13,7 +20,7 @@ for ($i = 0; $i < strlen($salue) ; $i++){
 	if($yes[$i] == 'a' or $yes[$i] == 'i' or $yes[$i] == 'e' or $yes[$i] == 'o' or $yes[$i] == 'u'){
 		$yes[$i] = strtoupper($yes[$i]);
 
-		echo $yes[$i] ;
+		display($yes);
 	}
 
 
