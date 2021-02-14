@@ -41,6 +41,9 @@ function calculated($numbers){
 
 $val = calculated($numbers);
 print_r($val);
+echo "<br>";
+
+echo implode($val);
 
 echo "<br>";
 
