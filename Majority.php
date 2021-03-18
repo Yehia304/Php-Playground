@@ -24,6 +24,8 @@ function majority_element($arr)
 }
 $num1 = array(1, 2, 3, 4, 5, 5, 5, 5, 5, 5, 6);
 $num2 = array(1,2,3,3,3,3,2,3,5,3,1,3,3,4,6,1,3,3,4,6,6);
+$num3 = array(1,2,3,3,3,3,2,3,5,4,1,5,3,4,6,1,3,3,4,5,6);
 print_r(majority_element($num1)."\n");
 print_r(majority_element($num2)."\n");
+print_r(majority_element($num3)."\n");
 ?>
