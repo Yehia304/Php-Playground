@@ -18,9 +18,10 @@ else {
 
 $arr1 = 'anagram';
 $arr2 = 'nagaram';
+$arr3 = 'garam';
 
 
-Anagram($arr1,$arr2);
+Anagram($arr1,$arr2,$arr3);
 
 
 
